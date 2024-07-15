@@ -9,11 +9,14 @@
 </head>
 <body>
     <main>
-        <div class="gerador" id="igerador">
-            <input type="text" name="" id="">
-            <button>Gerar Qr code</button>
+        <h1>Gerador de QR code</h1>
+        <div class="container">
+            <div class="gerador" id="igerador">
+                <input type="text" name="texto" id="itexto" placeholder="Escreva um texto ou uma URL">
+                <button onclick="gerarQrcode()">Gerar Qr code</button>
+            </div>
+            <div class="qrcode hide" id="iqrcode"></div>
         </div>
-        <div class="qrcode" id="qrcode">Qr code</div>
     </main>
 </body>
 </html>
