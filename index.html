@@ -12,7 +12,12 @@
         <h1>Gerador de QR code</h1>
         <div class="container">
             <div class="gerador" id="igerador">
-                <input type="text" name="texto" id="itexto" placeholder="Escreva um texto ou uma URL">
+                <label for="itexto">URL ou Texto</label>
+                <input type="text" name="texto" id="itexto" placeholder="Escreva um texto ou uma URL" class="texto">
+                <label for="icor">Cor Principal</label>
+                <input type="color" id="icor" class="cor">
+                <label for="icorFundo">Cor do Fundo</label>
+                <input type="color" id="icorFundo" class="corFundo" value="#ffffff">
                 <button onclick="gerarQrcode()">Gerar Qr code</button>
             </div>
             <div class="qrcode hide" id="iqrcode"></div>
